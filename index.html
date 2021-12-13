@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Tatea 3</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("article").hide()
+            $("#menuayuda").click(function(){
+                $("article").hide()
+                $("#Ayuda").show();
+            });
+            $("#menuofimatico").click(function(){
+                $("article").hide()
+                $("#Ofimático").show();
+            });
+            $("#menurecuperacion").click(function(){
+                $("article").hide()
+                $("#Recuperación").show();
+            });
+            $("#menuseguridad").click(function(){
+                $("article").hide()
+                $("#Seguridad").show();
+            });
+            $("#menuaplicaciones").click(function(){
+                $("article").hide()
+                $("#Portables").show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <style>
+        * {
+           margin: 0;
+           padding: 0;
+      }
+    </style>
+    <header>
+        <h1>INSTALACIÓN DE SOFTWARE DE PROPÓSITO GENERAL</h1>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li id="menuayuda"><a href="#Ayuda">Ayuda</a></li>
+                <li id="menuofimatico"><a href="#Ofimático">Software ofimático</a></li>
+                <li id="menurecuperacion"><a href="#Recuperación">Software de recuperación de datos y mantenimiento del sistema</a></li>
+                <li id="menuseguridad"><a href="#Seguridad">Utilidades de seguridad</a></li>
+                <li id="menuaplicaciones"><a href="#Portables">Aplicaciones portables</a></li>
+            </ul>
+        </nav>
+        <article id="Ayuda">
+            <iframe " style="width:100%; border:none" src="./ayuda/ayuda.html"></iframe>
+        </article>
+        <article id="Ofimático">
+            <iframe style="width:100%; border:none" src="./ofimatica/ofimatica.html"></iframe>
+        </article>
+        <article id="Recuperación">
+            <iframe style="width:100%; border:none" src="./recuperacion/recuperacion.html"></iframe>
+        </article>
+        <article id="Seguridad">
+            <iframe style="width:100%; border:none" src="./seguridad/seguridad.html"></iframe>
+        </article>
+        <article id="Portables">
+            <iframe style="width:100%; border:none" src="./portables/portables.html"></iframe>
+        </article>
+    </section>
+
+    <footer> 
+        <p>Lisa Kramarenko</p>
+    </footer>
+</body>
+</html>
